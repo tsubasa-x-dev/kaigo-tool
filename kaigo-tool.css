@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+.body {
+    background-color: rgba(255, 0, 128, 0.5);
+    color: white;
+}
+/*ホーム設定*/
+/* ホーム読み上げ機能ボタン */
+.home-speech-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s; 
+    margin:20px;
+    vertical-align:top;
+
+}
+
+.home-speech-button:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* ホームToDoボタン */
+.home-to-do-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color: rgba(255, 166, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s;
+    margin:20px;
+    vertical-align:top;
+}
+
+.home-to-do-button:hover {
+    background-color: rgba(255, 166, 0, 0.8);
+    transform: scale(1.05);
+}
+/*ホーム日記ボタン */
+.home-diary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color:rgba(180, 54, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s; 
+    margin:20px;
+    vertical-align:top;
+}
+.home-diary-button:hover {
+    background-color:rgba(180, 54, 0, 0.8);
+    transform: scale(1.05);
+}
+/*ホーム毎日セルフチェックボタン */
+.home-daily-check-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color:rgba(0, 128, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s; 
+    margin:20px;
+    vertical-align:top;
+}
+.home-daily-check-button:hover {
+    background-color:rgba(0, 128, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/*header設定*/
+.header-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.header-nav li{
+    flex:1;
+    max-width:160px;
+}
+.header-nav a{
+    display:block;
+    text-align:center;
+    padding:10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.header-nav a.home{
+    background-color:rgba(255, 192, 203, 0.5);
+    color:white;
+}
+.header-nav a.home:hover{
+    background-color:rgba(255, 192, 203, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.speech{
+    background-color:rgba(0, 0, 255, 0.5);
+    color:white;
+}
+.header-nav a.speech:hover{
+    background-color:rgba(0, 0, 255, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.to-do{
+    background-color: rgba(255, 166, 0, 0.5);
+    color:white;
+}
+.header-nav a.to-do:hover{
+    background-color: rgba(255, 166, 0, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.diary{
+    background-color:rgba(180, 54, 0, 0.5);
+    color:white;
+}
+.header-nav a.diary:hover{
+    background-color:rgba(180, 54, 0, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.daily-check{
+    background-color:rgba(0, 128, 0, 0.5);
+    color:white;
+}
+.header-nav a.daily-check:hover{
+    background-color:rgba(0, 128, 0, 0.8);
+    transform: scale(1.05);
+}
+
+
+
+/*speech.html*/
+/*テキスト入力*/
+#text-input{
+    display: inline-block;
+    font-size: 30px;
+    text-align:center;
+    width:500px;
+    margin:100px 0px 0px 0px;
+     
+}
+/*読み上げ*/
+#speak-button{
+    display: inline-block;
+    font-size: 15px;
+    width:250px;
+    margin:20px 20px;
+}
+/*停止*/
+#stop-button{
+    display: inline-block;
+    font-size: 15px;
+    width:250px;
+    margin:20px 20px;
+}
+/*リセット*/
+#clear-button{
+    display: inline-block;
+    font-size: 15px;
+    width:250px;
+    margin:20px 20px;
+}
+
+
+.text-align-center{
+    text-align: center;
+}
+.text-align-left{
+    text-align: left;
+}
+/*スマホ用設定*/
+@media (max-width:768px){
+    .home-speech-button,.home-to-do-button,.home-diary-button,.home-daily-check-button{
+        width:45%;
+        height: auto;
+        aspect-ratio:1/1;
+        font-size:20px;
+    }
+}

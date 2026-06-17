@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>読み上げ機能</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="kaigo-tool.css">
+    </head>
+    <body class="body">
+        <header>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="home.html" class="home">ホーム</a></li>
+                    <li><a href="to-do.html" class="to-do">やること一覧</a></li>
+                    <li><a href="diary.html" class="diary">日記</a> </li>
+                    <li><a href=daily-check.html class="daily-check">毎日チェック</a></li>
+                    
+                </ul>    
+            </nav>    
+        </header>
+        <div class="text-align-center">
+        <h1>読み上げ機能</h1>
+        <input class="text-align-center" type="text" id="text-input" placeholder="しゃべらせたい言葉をここに入力">
+        </div>
+        <br>
+        <div class="text-align-center">
+        <button id="speak-button">ここをクリックして読み上げ</button>
+        <button id="stop-button">読み上げ停止</button>
+        <button id="clear-button">リセット</button>
+        </div>
+        <script src="speech.js"></script>
+        <script src="controls.js"></script>
+    </body>
+</html>

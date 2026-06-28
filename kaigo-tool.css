@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+.body {
+    background-color: rgba(255, 0, 128, 0.5);
+    color: white;
+}
+
+/* Googleログインボタンのデザイン */
+#login-btn, #logout-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#login-btn {
+    background-color: #4285f4; /* Googleブルー */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#login-btn:hover {
+    background-color: #357ae8;
+}
+
+/* ログアウトボタン */
+#logout-btn {
+    background-color: #e74c3c; /* 退色赤 */
+    color: white;
+    margin-left: 10px;
+}
+
+#logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/*ログアウト*/
+/* ログアウトボタンを囲むエリア（中央寄せにする） */
+.logout-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ログアウトボタン単体のデザイン */
+.home-logout-button {
+    padding: 12px 24px;
+    background-color: #e74c3c; /* 警告やログアウトを意味する赤色 */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* マウスを乗せたときに滑らかに色を変える */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* マウスを乗せたとき（ホバー時）は少し暗い赤色にする */
+.home-logout-button:hover {
+    background-color: #c0392b;
+}
+
+
+
+/*ホーム設定*/
+/* ホーム読み上げ機能ボタン */
+.home-speech-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s; 
+    margin:20px;
+    vertical-align:top;
+
+}
+
+.home-speech-button:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* ホームToDoボタン */
+.home-to-do-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color: rgba(255, 166, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s;
+    margin:20px;
+    vertical-align:top;
+}
+
+.home-to-do-button:hover {
+    background-color: rgba(255, 166, 0, 0.8);
+    transform: scale(1.05);
+}
+/*ホーム日記ボタン */
+.home-diary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color:rgba(180, 54, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s; 
+    margin:20px;
+    vertical-align:top;
+}
+.home-diary-button:hover {
+    background-color:rgba(180, 54, 0, 0.8);
+    transform: scale(1.05);
+}
+/*ホーム毎日セルフチェックボタン */
+.home-daily-check-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width:300px;
+    height:300px;
+    background-color:rgba(0, 128, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: 0.2s; 
+    margin:20px;
+    vertical-align:top;
+}
+.home-daily-check-button:hover {
+    background-color:rgba(0, 128, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/*header設定*/
+.header-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.header-nav li{
+    flex:1;
+    max-width:160px;
+}
+.header-nav a{
+    display:block;
+    text-align:center;
+    padding:10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.header-nav a.home{
+    background-color:rgba(255, 0, 43, 0.5);
+    color:white;
+}
+.header-nav a.home:hover{
+    background-color:rgba(255, 0, 43, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.speech{
+    background-color:rgba(0, 0, 255, 0.5);
+    color:white;
+}
+.header-nav a.speech:hover{
+    background-color:rgba(0, 0, 255, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.to-do{
+    background-color: rgba(255, 166, 0, 0.5);
+    color:white;
+}
+.header-nav a.to-do:hover{
+    background-color: rgba(255, 166, 0, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.diary{
+    background-color:rgba(180, 54, 0, 0.5);
+    color:white;
+}
+.header-nav a.diary:hover{
+    background-color:rgba(180, 54, 0, 0.8);
+    transform: scale(1.05);
+}
+.header-nav a.daily-check{
+    background-color:rgba(0, 128, 0, 0.5);
+    color:white;
+}
+.header-nav a.daily-check:hover{
+    background-color:rgba(0, 128, 0, 0.8);
+    transform: scale(1.05);
+}
+
+
+
+/*speech.html*/
+/*テキスト入力*/
+#text-input{
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 10px;
+    width:500px;
+    padding:10px;
+    border: none;
+     
+}
+/*読み上げ*/
+#speak-button{
+    display: inline-block;
+    font-size: 15px;
+    padding:10px;
+    border-radius: 10px;
+    width:250px;
+    margin:20px 20px;
+    border: none;
+}
+/*停止*/
+#stop-button{
+    display: inline-block;
+    font-size: 15px;
+    padding:10px;
+    border-radius: 10px;
+    width:250px;
+    margin:20px 20px;
+    border: none;
+}
+/*リセット*/
+#clear-button{
+    display: inline-block;
+    font-size: 15px;
+    padding:10px;
+    border-radius: 10px;
+    width:250px;
+    margin:20px 20px;
+    border: none;
+}
+/*daily-check.html*/
+.send-button{
+    padding:10px;
+    border:none;
+    border-radius: 10px;   
+    background-color: #ffffff; 
+    color: #ff69b4;
+}
+.reset-button{
+    padding:10px;
+    border:none;
+    border-radius: 10px;   
+    background-color: #ffffff; 
+    color: #ff69b4;
+}
+/*thank.html*/
+.div-go-to-home{
+    display: flex;
+    justify-content: center; 
+    margin-top: 40px;   
+}
+
+.go-to-home {
+    display: inline-block;   
+    padding: 15px 40px;      
+    text-align: center;
+    text-decoration: none;   
+    border-radius: 30px;     
+    font-size: 20px;         
+    font-weight: bold;       
+    
+   
+    background-color: #ffffff; 
+    color: #ff69b4;            
+    
+    
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.go-to-home:hover {
+    background-color: #ffe4e1; 
+    transform: scale(1.05);   
+}
+
+
+
+
+
+
+
+.text-align-center{
+    text-align: center;
+}
+.text-align-left{
+    text-align: left;
+}
+/*スマホ用設定*/
+@media (max-width:768px){
+    .home-speech-button,.home-to-do-button,.home-diary-button,.home-daily-check-button{
+        width:45%;
+        height: auto;
+        aspect-ratio:1/1;
+        font-size:20px;
+    }
+}

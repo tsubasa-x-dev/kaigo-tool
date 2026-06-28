@@ -13,8 +13,30 @@
                     <li><a href="speech.html" class="speech">読み上げ機能</a></li>
                     <li><a href="to-do.html" class="to-do">やること一覧</a></li>
                     <li><a href="diary.html" class="diary">日記</a></li>
+                    <li><a href="daily-check.html" class="daily-check">毎日チェック</a></li>
                 </ul>
             </nav>
         </header>
+        <h1 class="text-align-center">毎日セルフチェック</h1>
+        <form  method="GET" action="thank.html" class="text-align-center">
+            <p>今日はおいしくご飯をたべられましたか？</p>
+            <input type="radio" name="meal" value="yes">はい
+            <input type="radio" name="meal" value="no">いいえ
+            <br>
+            <p>今日は体を動かしましたか？</p>
+            <input type="radio" name="condition" value="yes">はい
+            <input type="radio" name="condition" value="no">いいえ
+            <br>
+            <p>普段と変わらずに過ごせましたか？</p>
+            <input type="radio" name="fatigue" value="yes">はい
+            <input type="radio" name="fatigue" value="no">いいえ
+            <br>
+            <p>なにか気になることがありましたら書いてください。（任意）</p>
+            <textarea name="freedom" rows="5" cols="40"></textarea>
+            <br>
+            <p>入力が完了しましたら、送信をおしてください。</p>
+            <button type="submit" value="send" class="send-button">送信</button>
+            <button type="reset" value="reset" class="reset-button">リセット</button>
+        </form>
     </body>
 </html>

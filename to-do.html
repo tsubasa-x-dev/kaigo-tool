@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>やること一覧</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/kaigo-tool.css">
+    </head>
+    <body class="body">
+        <header>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="home.html" class="home">ホーム</a></li>
+                    <li><a href="speech.html" class="speech">読み上げ機能</a></li>
+                    <li><a href="to-do.html" class="to-do">やること一覧</a></li>
+                    <li><a href="diary.html" class="diary">日記</a></li>
+                    <li><a href="daily-check.html" class="daily-check">毎日チェック</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="text-align-center">
+        <h1>todoリスト</h1>
+        <input type="text" id="todo-input" placeholder="やることを入力">
+        <br>
+        <button id="add-button">追加</button>
+        <ul id="todo-list"></ul>
+        </div>
+        <script type="module" src="js/to-do.js"></script>
+    </body>
+</html>
